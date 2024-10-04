@@ -1,0 +1,7 @@
+com.non.dozortest.test.app-core-testing-2.2.0-0 /Users/apple/.gradle/caches/transforms-4/8e9973b3ab6c0e12ab820292c99475c7/transformed/core-testing-2.2.0/res
+com.non.dozortest.test.app-core-1.6.1-1 /Users/apple/.gradle/caches/transforms-4/9d23cb9a9cee15d523c3f3d86162b3da/transformed/core-1.6.1/res
+com.non.dozortest.test.app-core-runtime-2.2.0-2 /Users/apple/.gradle/caches/transforms-4/fa9d6a832250867dda458b2862027a4a/transformed/core-runtime-2.2.0/res
+com.non.dozortest.test.app-androidTest-3 /Users/apple/AndroidStudioProjects/DozorTest/app/build/generated/res/resValues/androidTest/debug
+com.non.dozortest.test.app-mergeDebugAndroidTestResources-4 /Users/apple/AndroidStudioProjects/DozorTest/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.non.dozortest.test.app-mergeDebugAndroidTestResources-5 /Users/apple/AndroidStudioProjects/DozorTest/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.non.dozortest.test.app-debugAndroidTest-6 /Users/apple/AndroidStudioProjects/DozorTest/app/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources

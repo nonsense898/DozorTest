@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.non.dozortest.test.app-mergeDebugAndroidTestResources-4:/values/values.xml",
+            "map": [
+                {
+                    "source": "/Users/apple/.gradle/caches/transforms-4/9d23cb9a9cee15d523c3f3d86162b3da/transformed/core-1.6.1/res/values/values.xml",
+                    "from": {
+                        "startLines": "4,11",
+                        "startColumns": "0,0",
+                        "startOffsets": "142,510",
+                        "endLines": "10,17",
+                        "endColumns": "8,8",
+                        "endOffsets": "509,875"
+                    },
+                    "to": {
+                        "startLines": "2,9",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,427",
+                        "endLines": "8,15",
+                        "endColumns": "8,8",
+                        "endOffsets": "422,792"
+                    }
+                }
+            ]
+        }
+    ]
+}

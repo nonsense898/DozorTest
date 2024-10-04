@@ -1,0 +1,3 @@
+com.non.dozortest.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme
