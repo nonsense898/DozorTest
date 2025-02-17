@@ -21,6 +21,7 @@ public final class MainActivity extends androidx.activity.ComponentActivity {
     }
     
     @java.lang.Override()
+    @kotlin.OptIn(markerClass = {androidx.compose.animation.ExperimentalSharedTransitionApi.class})
     protected void onCreate(@org.jetbrains.annotations.Nullable()
     android.os.Bundle savedInstanceState) {
     }

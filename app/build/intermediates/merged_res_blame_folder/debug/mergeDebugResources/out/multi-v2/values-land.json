@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.non.dozortest.app-mergeDebugResources-92:/values-land/values-land.xml",
+            "outputFile": "com.non.dozortest.app-mergeDebugResources-91:/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/Users/apple/.gradle/caches/transforms-4/e77ba4ac11b6264a00be00b446fedf45/transformed/appcompat-1.7.0/res/values-land/values-land.xml",
+                    "source": "/Users/apple/.gradle/caches/8.11.1/transforms/ab951dbf5dafeae0e38700eadb3235bb/transformed/appcompat-1.7.0/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/apple/.gradle/caches/transforms-4/51594ab4e9e54733abcae9a6a02d79ce/transformed/material-1.4.0/res/values-land/values-land.xml",
+                    "source": "/Users/apple/.gradle/caches/8.11.1/transforms/799d71c08f973010b8bcb21eec90d613/transformed/material-1.4.0/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,26,32",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

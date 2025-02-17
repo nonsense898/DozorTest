@@ -4,7 +4,7 @@
             "outputFile": "com.non.dozortest.app-mergeReleaseResources-89:/values-small-v4/values-small-v4.xml",
             "map": [
                 {
-                    "source": "/Users/apple/.gradle/caches/transforms-4/51594ab4e9e54733abcae9a6a02d79ce/transformed/material-1.4.0/res/values-small-v4/values-small-v4.xml",
+                    "source": "/Users/apple/.gradle/caches/8.11.1/transforms/799d71c08f973010b8bcb21eec90d613/transformed/material-1.4.0/res/values-small-v4/values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

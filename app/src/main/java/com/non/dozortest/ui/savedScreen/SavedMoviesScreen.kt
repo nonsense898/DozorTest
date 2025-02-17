@@ -1,5 +1,11 @@
 package com.non.dozortest.ui.savedScreen
 
+import androidx.compose.animation.AnimatedVisibilityScope
+import androidx.compose.animation.ExperimentalSharedTransitionApi
+import androidx.compose.animation.SharedTransitionScope
+import androidx.compose.animation.core.LinearEasing
+import androidx.compose.animation.core.animateFloatAsState
+import androidx.compose.animation.core.tween
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -13,8 +19,12 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -26,19 +36,31 @@ import com.non.dozortest.ui.ItemMovie
 import com.non.dozortest.ui.mainScreen.EmptyMoviePlaceholder
 import com.non.dozortest.viewmodel.MainViewModel
 
+@OptIn(ExperimentalSharedTransitionApi::class)
 @Composable
-fun SavedMoviesScreen(
+fun SharedTransitionScope.SavedMoviesScreen(
     navController: NavController,
-    mainViewModel: MainViewModel = hiltViewModel()
-
-) {
+    mainViewModel: MainViewModel = hiltViewModel(),
+    animatedVisibilityScope: AnimatedVisibilityScope,
+    ) {
     val savedMovies by mainViewModel.allMovies.collectAsState(initial = emptyList())
 
     if (savedMovies.isEmpty()) {
         EmptyMoviePlaceholder()
     } else {
-        LazyColumn(modifier = Modifier.padding(top = 30.dp)) {
-            items(savedMovies) { movie ->
+        LazyColumn(modifier = Modifier.padding(top = 64.dp)) {
+            items(items = savedMovies) { movie ->
+                var lapVisible by remember { mutableStateOf(false) }
+
+                val animatedLapAlpha by animateFloatAsState(
+                    targetValue = if (lapVisible) 1f else 0f,
+                    label = "Lap alpha",
+                    animationSpec = tween(
+                        durationMillis = 250,
+                        easing = LinearEasing,
+                    )
+                )
+
                 ItemMovie(
                     movie = movie,
                     onMovieClick = {
@@ -48,7 +70,12 @@ fun SavedMoviesScreen(
                     onSaveClick = { movie, _ ->
                         mainViewModel.removeMovie(movie)
                     },
-                    isSaved = true
+                    isSaved = true,
+                    animatedVisibilityScope = animatedVisibilityScope,
+                    modifier = Modifier .graphicsLayer {
+                        lapVisible = true
+                        alpha = animatedLapAlpha
+                    }
                 )
             }
         }

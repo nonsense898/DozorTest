@@ -3,10 +3,10 @@
     useSupportLibraryVectorDrawables="true"
     package="com.non.dozortest"
     minSdkVersion="26"
-    targetSdkVersion="34"
+    targetSdkVersion="35"
     mergedManifest="build/intermediates/merged_manifest/release/processReleaseMainManifest/AndroidManifest.xml"
     manifestMergeReport="build/outputs/logs/manifest-merger-release-report.txt"
-    proguardFiles="build/intermediates/default_proguard_files/global/proguard-android-optimize.txt-8.6.1:proguard-rules.pro"
+    proguardFiles="build/intermediates/default_proguard_files/global/proguard-android-optimize.txt-8.9.0-rc01:proguard-rules.pro"
     partialResultsDir="build/intermediates/lint_vital_partial_results/release/lintVitalAnalyzeRelease/out">
   <buildFeatures
       namespacing="REQUIRED"/>
@@ -22,11 +22,11 @@
   <testFixturesSourceProviders>
   </testFixturesSourceProviders>
   <artifact
-      classOutputs="build/intermediates/javac/release/compileReleaseJavaWithJavac/classes:build/tmp/kotlin-classes/release:build/tmp/kapt3/classes/release:build/kotlinToolingMetadata:build/intermediates/hilt/component_classes/release:build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/release/processReleaseResources/R.jar"
+      classOutputs="build/intermediates/javac/release/compileReleaseJavaWithJavac/classes:build/tmp/kotlin-classes/release:build/kotlinToolingMetadata:build/intermediates/hilt/component_classes/release:build/generated/ksp/release/resources:build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/release/processReleaseResources/R.jar"
       type="MAIN"
       applicationId="com.non.dozortest"
-      generatedSourceFolders="build/generated/source/kapt/release:build/generated/ap_generated_sources/release/out:build/generated/data_binding_base_class_source_out/release/out"
+      generatedSourceFolders="build/generated/ksp/release/java:build/generated/ksp/release/kotlin:build/generated/ap_generated_sources/release/out"
       generatedResourceFolders="build/generated/res/resValues/release"
-      desugaredMethodsFiles="/Users/apple/.gradle/caches/transforms-4/a7c826eeee8b3df35d4b9e8abec5658a/transformed/D8BackportedDesugaredMethods.txt">
+      desugaredMethodsFiles="/Users/apple/.gradle/caches/8.11.1/transforms/15ccf9558a3edd74ba36eb68d5887668/transformed/D8BackportedDesugaredMethods.txt">
   </artifact>
 </variant>

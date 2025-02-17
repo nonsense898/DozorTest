@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.non.dozortest.app-mergeDebugResources-92:/values-v30/values-v30.xml",
+            "outputFile": "com.non.dozortest.app-mergeDebugResources-91:/values-v30/values-v30.xml",
             "map": [
                 {
-                    "source": "/Users/apple/.gradle/caches/transforms-4/81d29946d59e7ba8aa32fe85fdf0854e/transformed/material3-release/res/values-v30/values-v30.xml",
+                    "source": "/Users/apple/.gradle/caches/8.11.1/transforms/0a46562a464c972b7eaafdc8e4bb2e03/transformed/material3-release/res/values-v30/values-v30.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

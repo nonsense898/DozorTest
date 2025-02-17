@@ -36,5 +36,9 @@ data class Movie(
     var voteCount: String,
 
     @ColumnInfo(name = "isSaved")
-    var isSaved: Boolean = false
+    var isSaved: Boolean = false,
+
+    @ColumnInfo(name = "genre_ids")
+    @SerializedName("genre_ids")
+    var genreIds: List<Int>
 )

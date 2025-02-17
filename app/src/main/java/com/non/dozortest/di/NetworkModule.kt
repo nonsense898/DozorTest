@@ -10,7 +10,6 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
 
-
 @Module
 @InstallIn(SingletonComponent::class)
 object NetworkModule {
@@ -18,7 +17,7 @@ object NetworkModule {
         .addInterceptor { chain ->
             val original = chain.request()
             val requestBuilder = original.newBuilder()
-                .header("Authorization", "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3YTlmNWU4ZmZhMGE3MzQyMzE1NTA0ZjYxZDc2ZGU4YSIsIm5iZiI6MTcyNjg0MDMwNy40NzMwMTYsInN1YiI6IjY2MjkzZmQ1NjNkOTM3MDE2NDc0MWI2NyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.cgP1YiJVTaJued9SlJZrnSRydhHaE2OyksPjIgPmOOE")
+                .header("Authorization", "Bearer ***********")
                 .header("Accept", "application/json")
             val request = requestBuilder.build()
             chain.proceed(request)
@@ -29,7 +28,7 @@ object NetworkModule {
     @Singleton
     fun provideRetrofit(): Retrofit {
         return Retrofit.Builder()
-            .baseUrl("https://api.themoviedb.org/3/movie/")
+            .baseUrl("https://api.themoviedb.org/3/")
             .addConverterFactory(GsonConverterFactory.create())
             .client(client)
             .build()

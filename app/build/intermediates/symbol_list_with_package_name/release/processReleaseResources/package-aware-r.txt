@@ -462,6 +462,7 @@ attr font
 attr fontFamily
 attr fontProviderAuthority
 attr fontProviderCerts
+attr fontProviderFallbackQuery
 attr fontProviderFetchStrategy
 attr fontProviderFetchTimeout
 attr fontProviderPackage
@@ -2150,7 +2151,6 @@ id counterclockwise
 id custom
 id customPanel
 id cut
-id dataBinding
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -2373,8 +2373,6 @@ id notification_main_column
 id notification_main_column_container
 id off
 id on
-id onAttachStateChangeListener
-id onDateChanged
 id one
 id outline
 id outward
@@ -2495,7 +2493,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textWatcher
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3796,7 +3793,7 @@ styleable ExtendedFloatingActionButton_Behavior_Layout behavior_autoHide behavio
 styleable FloatingActionButton android_enabled backgroundTint backgroundTintMode borderWidth elevation ensureMinTouchTargetSize fabCustomSize fabSize hideMotionSpec hoveredFocusedTranslationZ maxImageSize pressedTranslationZ rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec useCompatPadding
 styleable FloatingActionButton_Behavior_Layout behavior_autoHide
 styleable FlowLayout itemSpacing lineSpacing
-styleable FontFamily fontProviderAuthority fontProviderCerts fontProviderFetchStrategy fontProviderFetchTimeout fontProviderPackage fontProviderQuery fontProviderSystemFontFamily
+styleable FontFamily fontProviderAuthority fontProviderCerts fontProviderFallbackQuery fontProviderFetchStrategy fontProviderFetchTimeout fontProviderPackage fontProviderQuery fontProviderSystemFontFamily
 styleable FontFamilyFont android_font android_fontWeight android_fontStyle android_ttcIndex android_fontVariationSettings font fontStyle fontVariationSettings fontWeight ttcIndex
 styleable ForegroundLinearLayout android_foreground android_foregroundGravity foregroundInsidePadding
 styleable Fragment android_name android_id android_tag

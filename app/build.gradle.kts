@@ -2,18 +2,18 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.dagger.hilt.plugin)
-    alias(libs.plugins.kotlin.kapt)
+    alias(libs.plugins.ksp)
     alias(libs.plugins.kotlin.compose)
 }
 
 android {
     namespace = "com.non.dozortest"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.non.dozortest"
         minSdk = 26
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -33,14 +33,13 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "21"
     }
     buildFeatures {
-        dataBinding = true
         compose = true
     }
     composeOptions {
@@ -63,6 +62,11 @@ android {
 }
 
 dependencies {
+    implementation (libs.accompanist.systemuicontroller)
+    implementation (libs.androidx.foundation)
+    implementation(libs.haze)
+    implementation (libs.accompanist.swiperefresh)
+    implementation(libs.androidx.animation.android)
     // AndroidX
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
@@ -76,7 +80,7 @@ dependencies {
     implementation(libs.androidx.room.ktx)
     implementation(libs.androidx.media3.exoplayer)
     implementation(libs.androidx.media3.ui)
-    kapt(libs.androidx.room.compiler)
+    ksp(libs.androidx.room.compiler)
     implementation(libs.androidx.ui)
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
@@ -87,14 +91,14 @@ dependencies {
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
-    implementation (libs.androidx.hilt.navigation.compose)
+    implementation(libs.androidx.hilt.navigation.compose)
 
     //Blur
     implementation(libs.haze.jetpack.compose)
 
 
     //Lottie
-    implementation (libs.lottie.compose)
+    implementation(libs.lottie.compose)
 
 
     // Navigation
@@ -120,7 +124,7 @@ dependencies {
 
     // Hilt for dependency injection
     implementation(libs.dagger.hilt)
-    kapt(libs.dagger.hilt.compiler)
+    ksp(libs.dagger.hilt.compiler)
 
     // Retrofit for network requests
     implementation(libs.retrofit)

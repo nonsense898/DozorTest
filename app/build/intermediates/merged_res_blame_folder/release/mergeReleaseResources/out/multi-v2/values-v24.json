@@ -4,7 +4,7 @@
             "outputFile": "com.non.dozortest.app-mergeReleaseResources-89:/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "/Users/apple/.gradle/caches/transforms-4/d69e308a69d0dd0cac9035a57de2bf9e/transformed/media-1.7.0/res/values-v24/values-v24.xml",
+                    "source": "/Users/apple/.gradle/caches/8.11.1/transforms/4d36c20ab2d24421729679dee1f27c31/transformed/media-1.7.0/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/apple/.gradle/caches/transforms-4/e77ba4ac11b6264a00be00b446fedf45/transformed/appcompat-1.7.0/res/values-v24/values-v24.xml",
+                    "source": "/Users/apple/.gradle/caches/8.11.1/transforms/ab951dbf5dafeae0e38700eadb3235bb/transformed/appcompat-1.7.0/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
